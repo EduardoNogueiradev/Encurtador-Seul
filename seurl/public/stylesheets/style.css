@@ -1,0 +1,171 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    background: #222F3E;
+}
+
+main {
+    padding: 0px 24px;
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+main h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+p {
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+section h3  {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* MENU */
+.menu-nav{
+    display: none;
+}
+
+.menu-nav_on {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 150px;
+    border-radius: 10px ;
+    margin-top: 200px;
+    top: -120px;
+    margin-left: 55vw;
+    background-color: #FFFFFF;
+}
+
+header .menu{
+    position: fixed;
+    height: 72px;
+    width: 100vw;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: #1C1C1C solid 3px;
+}
+
+.menu-button {
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+.menu-button:hover {
+    color: #ee5253;
+    cursor: pointer;
+}
+
+.menu-logo {
+    width: 143px;
+}
+
+.icone-animation {
+    animation: menu-animation .2s linear forwards;
+}
+
+@keyframes menu-animation {
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.icone-style {
+    font-size: 2rem;
+    color: black;
+}
+
+.button-icone {
+    border: none;
+    background: none;
+}
+
+.button-icone:hover {
+    cursor: pointer;
+}
+
+@media  screen and (min-width: 1024px) {
+    .menu-nav {
+        display: flex;
+        width: 40vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .button-icone {
+        display: none;
+    }
+}
+/* MENU fim */
+
+/* INICIO */
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.inicio-box{
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.inicio-input {
+    box-sizing: border-box;
+    padding: 10px 30px ;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f4f4f4;
+    border:#1C1C1C solid 1px;
+}
+
+.inicio-button {
+    width: 100%;
+    padding: 10px 30px;
+    margin: 5px 0 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    background: #ee5253;
+    border: #1C1C1C solid 1px;
+    text-transform: uppercase;
+}
+
+.inicio-button:hover {
+    cursor: pointer;
+}
+/* INICIO fim */
+
+
