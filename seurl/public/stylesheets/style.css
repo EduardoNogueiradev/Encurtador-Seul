@@ -64,7 +64,6 @@ header .menu{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border-bottom: #1C1C1C solid 3px;
 }
 
 .menu-button {

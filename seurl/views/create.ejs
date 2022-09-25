@@ -10,11 +10,10 @@
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Seurl | Gerando de Link</title>
 </head>
 <body>
     <header>
-        <script type="text/javascript" src="/javascripts/header.js"></script>
         <nav class="menu">
             <h1>
                 <img src="/images/logo-seurl.png" class="menu-logo" alt="logo do seurl">
@@ -24,7 +23,7 @@
             </button>
             <ul id="nav" class="menu-nav">
                 <li>
-                    <a href="#" class="menu-button">
+                    <a href="/" class="menu-button">
                         Encurtador
                     </a>
                 </li>
@@ -47,28 +46,31 @@
         </nav>
     </header>
     <main>
-        <section class="stats">
-            <div class="box-link">
-                <input id="text" value="<%= process.env.DOMAIN %><%= code %>" >
-                <button id="copy"><i class="ph-clipboard"></i></button>
-            </div>
-            <p>
-                Seu Link<br/>
-                <%= url %>
-            </p>
-            <p> Visitas:
-                <b>
-                    <%= hits %>
-                </b>
-            </p>
-            <p> ultima visita
-                <b>
-                    <%= updatedAt %>
-                </b>
-            </p>
-            <a href="/">Encurtar nova URL</a>
-        </section>
+        <ul class="create">
+            <li class="titulo">
+                Seu Link está pronto!
+            </li>
+            <li class="box-link">
+                <input id="text" class="border" value="<%= process.env.DOMAIN %><%= code %>" >
+                <button id="copy" class="border">Copiar link</button>
+            </li>
+            <li class="texto-centralizado">
+                Link Encurtado:
+                <b><%= url %></b>
+            </li>
+            <li class="informacao texto-centralizado border">
+                Para ver as estatísticas do seu link
+                basta após o link adicionar <code>/stats</code>
+            </li>
+            <li>
+                <a href="/">
+                    <button class="encurtar">Encurtar nova URL</button>
+                </a>
+            </li>
+        </ul>
+
     </main>
     <script type="text/javascript" src="/javascripts/copy.js"></script>
+    <script type="text/javascript" src="/javascripts/header.js"></script>
 </body>
 </html>
