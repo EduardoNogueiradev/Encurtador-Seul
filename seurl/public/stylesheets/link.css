@@ -1,0 +1,45 @@
+.create {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.on {
+    display: flex !important;
+}
+
+.off {
+    display: none;
+}
+
+button {
+    border-radius: 3px;
+    border: 1px solid #2E2E2E;
+    font-size: 1.3rem;
+    padding: 16px;
+    background: #ee5253;
+}
+
+button:hover {
+    padding: 18px;
+}
+
+#link {
+    text-decoration: none !important;
+}
+
+@media screen and (min-width: 767px){
+    .button {
+        padding: 16px 42px;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    
+    .button:hover {
+        cursor: pointer;
+        padding: 18px 44px;
+    }
+}
+
