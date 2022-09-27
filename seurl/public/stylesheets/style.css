@@ -1,7 +1,7 @@
 body {
     height: 100%;
     width: 100%;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif !important;
     background: #222F3E;
 }
 
