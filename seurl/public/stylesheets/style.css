@@ -1,24 +1,7 @@
-body {
-    height: 100%;
-    width: 100%;
-    font-family: 'DM Sans', sans-serif !important;
-    background: #222F3E;
-}
-
-main {
-    padding: 0px 24px;
-}
 
 main h2 {
     font-size: 24px;
     margin-bottom: 32px;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-
-main h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
     font-weight: bold;
     color: #FFFFFF;
 }
@@ -28,133 +11,6 @@ p {
     font-weight: 400;
     color: #BDC1C6;
 }
-
-section h3  {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* MENU */
-.menu-nav{
-    display: none;
-}
-
-.menu-nav_on {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 250px;
-    width: 150px;
-    border-radius: 10px ;
-    margin-top: 200px;
-    top: -120px;
-    margin-left: 55vw;
-    background-color: #FFFFFF;
-}
-
-header .menu{
-    position: fixed;
-    height: 72px;
-    width: 100vw;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.menu-button {
-    text-decoration: none;
-    color: #1C1C1C;
-}
-
-.menu-button:hover {
-    color: #ee5253;
-    cursor: pointer;
-}
-
-.menu-logo {
-    width: 143px;
-}
-
-.icone-animation {
-    animation: menu-animation .2s linear forwards;
-}
-
-@keyframes menu-animation {
-    to {
-        transform: rotate(90deg);
-    }
-}
-
-.icone-style {
-    font-size: 2rem;
-    color: black;
-}
-
-.button-icone {
-    border: none;
-    background: none;
-}
-
-.button-icone:hover {
-    cursor: pointer;
-}
-
-@media  screen and (min-width: 1024px) {
-    .menu-nav {
-        display: flex;
-        width: 40vw;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .menu-button {
-        font-size: 1.2rem ;
-    }
-
-    .button-icone {
-        display: none;
-    }
-
-    .input-box {
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       justify-content: space-between;
-       width: 90% !important;
-    }
-    
-    .inicio-button {
-        width: 20% !important;
-        height: 70px;
-        margin: 0 0 24px 0 !important;
-        font-size: 1.2rem !important;
-    }
-
-    .inicio-input {
-        width: 78% !important;
-        height: 70px !important;
-        margin: 0 0 24px 0 !important;
-        font-size: 1.2rem !important;
-    }
-
-    p {
-        font-size: 1.3rem !important;
-    }
-
-    main h2 {
-        font-size: 2.3rem !important;
-        margin-bottom: 46px !important;
-    }
-
-}
-/* MENU fim */
-
-/* INICIO */
 
 
 .inicio {
@@ -207,7 +63,44 @@ header .menu{
 .inicio-button:hover {
     cursor: pointer;
 }
-/* INICIO fim */
+
+@media screen and (min-width: 1024px) {
+
+    .input-box {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+       width: 90%;
+    }
+    
+    .inicio-button {
+        width: 20% ;
+        height: 70px;
+        margin: 0 0 24px 0 ;
+        font-size: 1.2rem;
+    }
+ 
+    .inicio-input {
+        width: 78%;
+        height: 70px;
+        margin: 0 0 24px 0;
+        font-size: 1.2rem;
+    }
+ 
+    p {
+        font-size: 1.3rem;
+    }
+ 
+    main h2 {
+        font-size: 2.3rem ;
+        margin-bottom: 46px;
+    }
+
+    form p {
+        font-size: 1.3rem;
+    }
+}
 
 
 

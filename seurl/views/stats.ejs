@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
     <link rel="stylesheet" href="/stylesheets/reset.css">
     <link rel="stylesheet" href="/stylesheets/stats.css">
     <script src="https://unpkg.com/phosphor-icons"></script>
@@ -69,28 +69,32 @@
                 </li>
 
                 <li class="inf-container">
-                    <h3>Visitas</h3>
+                    <h3>Visitas:</h3>
                     <div>
                         <p><%= hits %></p>
                     </div>
                 </li>
 
                 <li class="inf-container">
-                    <ul>
-                        <li>
-                            <h3>Criado em:</h3>
-                            <div>
-                                <p><%= createdAt %></p>
-                            </div>
-                        </li>
+                    <h3>Criado em:</h3>
+                    <div class="container">
+                        <p><%= createdAt %></p>
+                    </div>
+                </li>
 
-                        <li>
-                            <h3>Última visita:</h3>
-                            <div>
-                                <p><%= updatedAt %></p>
-                            </div>
-                        </li>
-                    </ul>
+                <li class="inf-container">
+                    <h3>Última visita:</h3>
+                    <div class="container">
+                        <p><%= updatedAt %></p>
+                    </div>
+                </li>
+                <li class="inf-container">
+                    <h3>Ou:</h3>
+                    <div class="container">
+                        <a href="/" class="container-button">
+                            <button>Encurtar nova URL</button>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </section>
