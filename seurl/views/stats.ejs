@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
     <link rel="stylesheet" href="/stylesheets/reset.css">
     <link rel="stylesheet" href="/stylesheets/stats.css">
     <script src="https://unpkg.com/phosphor-icons"></script>
@@ -14,7 +14,6 @@
 </head>
 <body>
     <header>
-        <script type="text/javascript" src="/javascripts/header.js"></script>
         <nav class="menu">
             <h1>
                 <img src="/images/logo-seurl.png" class="menu-logo" alt="logo do seurl">
@@ -24,7 +23,7 @@
             </button>
             <ul id="nav" class="menu-nav">
                 <li>
-                    <a href="#" class="menu-button">
+                    <a href="/" class="menu-button">
                         Encurtador
                     </a>
                 </li>
@@ -48,29 +47,58 @@
     </header>
     <main>
         <section class="stats">
-            <div class="box-link">
-                <input id="text" value="<%= process.env.DOMAIN %><%= code %>" >
-                <button id="copy"><i class="ph-clipboard"></i></button>
+
+            <div class="stats-header">
+                <h2 class="header-text">Estatísticas do Link:</h2>
             </div>
 
+            <ul class="stats-inf">
 
-            <p>
-                Seu Link<br/>
-                <%= url %>
-            </p>
-            <p> Visitas:
-                <b>
-                    <%= hits %>
-                </b>
-            </p>
-            <p> ultima visita
-                <b>
-                    <%= updatedAt %>
-                </b>
-            </p>
-            <a href="/">Encurtar nova URL</a>
+                <li class="inf-container">
+                    <h3>Seu link:</h3>
+                    <div>
+                        <p><%= process.env.DOMAIN %><%= code %></p>
+                    </div>
+                </li>
+
+                <li class="inf-container">
+                    <h3>Link encurtado:</h3>
+                    <div>
+                        <p><%= url %></p>
+                    </div>
+                </li>
+
+                <li class="inf-container">
+                    <h3>Visitas:</h3>
+                    <div>
+                        <p><%= hits %></p>
+                    </div>
+                </li>
+
+                <li class="inf-container">
+                    <h3>Criado em:</h3>
+                    <div class="container">
+                        <p><%= createdAt %></p>
+                    </div>
+                </li>
+
+                <li class="inf-container">
+                    <h3>Última visita:</h3>
+                    <div class="container">
+                        <p><%= updatedAt %></p>
+                    </div>
+                </li>
+                <li class="inf-container">
+                    <h3>Ou:</h3>
+                    <div class="container">
+                        <a href="/" class="container-button">
+                            <button>Encurtar nova URL</button>
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
-    <script type="text/javascript" src="/javascripts/copy.js"></script>
+    <script type="text/javascript" src="/javascripts/header.js"></script>
 </body>
 </html>

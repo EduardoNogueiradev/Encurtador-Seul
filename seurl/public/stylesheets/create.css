@@ -76,8 +76,17 @@ button {
     font-size: 1.2rem;
 }
 
-#copy:hover {
+button:hover {
     cursor: pointer;
+}
+
+#copy:hover {
+    font-size: 1.25rem;
+}
+
+.encurtar:hover {
+    font-size: 1.05rem;
+    background: #add8e6;
 }
 
 .informacao {
@@ -112,10 +121,6 @@ code {
     background: #f4f4f4;
     color: black;
     border-radius: 4px;
-}
-
-.encurtar:hover {
-    cursor: pointer;
 }
 
 b {
