@@ -1,8 +1,8 @@
-const textInput = document.getElementById("text").value;
+const textInput = document.getElementById("text");
 const copyButton = document.getElementById("copy");
 
 copyButton.addEventListener('click', () =>{
-    textInput.Document.execCommand('copy');
+    textInput.value.Document.execCommand('copy');
     copyButton.innerHTML = 'Link Copiado!'
 })
     
