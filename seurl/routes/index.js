@@ -39,8 +39,11 @@ router.get('/:code', async (req, res, next) =>{
   resultado.hits++; 
   await resultado.save();
   
+  /* Rendireciona para a página encurtada */
+  res.redirect(resultado.url);
+
   /* Redenriza a página com anúncios e com o link */
-  res.render('link', resultado.dataValues)
+  /* res.render('link', resultado.dataValues) */
 })
 
 router.get('/:code/stats', async (req, res, next) =>{
