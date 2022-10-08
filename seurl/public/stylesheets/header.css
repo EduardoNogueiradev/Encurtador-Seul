@@ -40,7 +40,14 @@ header .menu{
     justify-content: space-around;
 }
 
+.menu-nav_on li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .menu-button {
+    text-align: center;
     text-decoration: none;
     color: #1C1C1C;
 }
