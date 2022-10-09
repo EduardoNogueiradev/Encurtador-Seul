@@ -1,0 +1,26 @@
+body main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.load {
+    border: 20px solid #F59E87;
+    border-top: 20px solid transparent ;
+    height: 25px;
+    width: 25px;
+    border-radius: 60px;
+    animation: rotation 1s linear infinite;
+}
+
+main p {
+    color: #FFFFFF;
+}
+
+@keyframes rotation {
+    to {
+        transform: rotate(360deg) ;
+    }
+}
