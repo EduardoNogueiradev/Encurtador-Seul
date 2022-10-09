@@ -40,7 +40,7 @@ router.get('/:code', async (req, res, next) =>{
   await resultado.save();
   
   /* Rendireciona para a página encurtada */
-  res.redirect(resultado.url);
+  res.render('redirect', resultado.dataValues);
 
   /* Redenriza a página com anúncios e com o link */
   /* res.render('link', resultado.dataValues) */
