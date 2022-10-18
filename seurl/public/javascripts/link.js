@@ -4,8 +4,8 @@ const redireciona = document.getElementById('url').innerHTML;
 const captcha = document.getElementById('recaptcha');
 
 function recaptchaVerify() {
-    button.classList.toggle('on')
-    captcha.classList.toString('off')
+    button.classList.toggle('on');
+    captcha.classList.toggle('off');
 }
 
 button.addEventListener('click', () =>{
