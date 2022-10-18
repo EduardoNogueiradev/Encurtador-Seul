@@ -2,10 +2,13 @@ const button = document.getElementById('delay');
 const endereco = document.getElementById('link');
 const redireciona = document.getElementById('url').innerHTML;
 const captcha = document.getElementById('recaptcha');
+const section = document.getElementById('cont-link');
+const indicator = document.getElementById('cont')
 
 function recaptchaVerify() {
     button.classList.toggle('on');
-    captcha.classList.toggle('off');
+    indicator.classList.toggle('on');
+    section.classList.toggle('on');
 }
 
 button.addEventListener('click', () =>{

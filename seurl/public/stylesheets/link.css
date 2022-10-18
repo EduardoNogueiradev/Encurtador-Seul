@@ -1,9 +1,23 @@
-.create {
+.structure {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.indicator {
+    margin-top: 50px;
+    padding: 12px;
+    background: #FFFFFF;
+}
+
+.indicator p {
+    color: black;
+}
+
+.active {
+    height: 200vh;
 }
 
 .on {
@@ -13,6 +27,19 @@
 .off {
     display: none;
 }
+ 
+@keyframes appear {
+    to {
+        display: flex !important;
+    }
+}
+
+@keyframes disappear {
+    to {
+        display: none;
+    }
+}
+
 
 button {
     border-radius: 3px;
