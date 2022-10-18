@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.load {
+#load {
     border: 20px solid #F59E87;
     border-top: 20px solid transparent ;
     height: 25px;

@@ -4,14 +4,14 @@ const redireciona = document.getElementById('url').innerHTML;
 const captcha = document.getElementById('recaptcha');
 const section = document.getElementById('cont-link');
 const indicator = document.getElementById('cont');
-const load = document.getElementsByClassName('load');
+const elementLoad = document.getElementById('load');
 
 const loading = new IntersectionObserver( entries => {
 
     Array.from(entries).forEach(entry => {
         if (entry.intersectionRatio >= 1) {
-            load.classList.toggle('off')
-            console.log('verificado')
+            console.log("entrou")
+            elementLoad.classList.toggle('off')
         }
     })
 
