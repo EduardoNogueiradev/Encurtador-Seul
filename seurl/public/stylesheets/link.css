@@ -22,11 +22,15 @@
 }
 
 .on {
-    display: flex;
+    display: flex !important;
 }
 
 .off {
     display: none;
+}
+
+.off-important {
+    display: none !important;
 }
 
 button {

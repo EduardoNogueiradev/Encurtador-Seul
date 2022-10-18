@@ -23,7 +23,7 @@ button.addEventListener('click', () =>{
             if(button.innerHTML == 0){
                 const buttonLink = document.getElementById('button-link');
                 buttonLink.classList.toggle('on');
-                button.classList.toggle('off');
+                button.classList.toggle('off-important');
                 button.classList.remove('on');
 
                 endereco.href = redireciona;
