@@ -10,15 +10,20 @@
 
     gtag('config', 'G-X8VE7DTT5T');
     </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/header.css">
     <link rel="stylesheet" href="/stylesheets/reset.css">
     <link rel="stylesheet" href="/stylesheets/link.css">
+    
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
     <title>Seurl | Link</title>
 </head>
 <body>
@@ -29,6 +34,8 @@
         var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
         pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
      </script>
+
+     <header>
         <nav class="menu">
             <h1>
                 <img src="/images/logo-seurl.png" class="menu-logo" alt="logo do seurl">
@@ -61,7 +68,15 @@
         </nav>
     </header>
     <main class="create">
-        <button id="delay" class="button on">Obter Link</button>
+
+        <form action="https://www.google.com/recaptcha/api/siteverify" method="POST">
+            <div class="g-recaptcha" secret="6Lfqv44iAAAAAOm63uVKIqlwX0a79RNwpqLUXKXq" data-callback="recaptchaVerify" data-sitekey="6Lfqv44iAAAAANM6hSBlFsTXLxcUgf5JFEdsKJtR"></div>
+            <br/>
+            <input type="submit" value="Submit">
+        </form>
+
+
+        <button id="delay" class="button off">Obter Link</button>
 
         <a href="" id="link"><button id="button-link" class="button off">Vá para o Link</button></a>
         

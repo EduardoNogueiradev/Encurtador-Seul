@@ -2,6 +2,13 @@ const button = document.getElementById('delay');
 const endereco = document.getElementById('link');
 const redireciona = document.getElementById('url').innerHTML;
 
+function recaptchaVerify() {
+    button.classList.toggle('on')
+}
+
+
+
+
 button.addEventListener('click', () =>{
     button.disabled = true;
     const valor = [ 5, 4, 3, 2, 1 ,0]    
