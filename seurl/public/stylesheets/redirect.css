@@ -15,12 +15,12 @@ body main {
     animation: rotation 1s linear infinite;
 }
 
-main p {
-    color: #FFFFFF;
-}
-
 @keyframes rotation {
     to {
         transform: rotate(360deg) ;
     }
+}
+
+main p {
+    color: #FFFFFF;
 }

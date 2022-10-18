@@ -3,7 +3,23 @@ const endereco = document.getElementById('link');
 const redireciona = document.getElementById('url').innerHTML;
 const captcha = document.getElementById('recaptcha');
 const section = document.getElementById('cont-link');
-const indicator = document.getElementById('cont')
+const indicator = document.getElementById('cont');
+const load = document.getElementsByClassName('load');
+
+const loading = new IntersectionObserver( entries => {
+
+    Array.from(entries).forEach(entry => {
+        if (entry.intersectionRatio >= 1) {
+            
+        }
+    })
+
+    }, {
+    threshold: [0.25 , 0.5 , 0.75 , 1]
+    })
+    Array.from(captcha).forEach( element => {
+    dashup.observe(element)
+})
 
 function recaptchaVerify() {
     button.classList.toggle('on');
