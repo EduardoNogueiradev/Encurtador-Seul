@@ -40,10 +40,10 @@ router.get('/:code', async (req, res, next) =>{
   await resultado.save();
   
   /* Rendireciona para a página encurtada */
-  res.render('redirect', resultado.dataValues);
+  /* res.render('redirect', resultado.dataValues); */
 
   /* Redenriza a página com anúncios e com o link */
-  /* res.render('link', resultado.dataValues) */
+  res.render('link', resultado.dataValues)
 })
 
 router.get('/:code/stats', async (req, res, next) =>{
