@@ -8,8 +8,9 @@
 
 .indicator {
     margin-top: 50px;
-    padding: 12px;
+    padding: 12px 24px;
     background: #FFFFFF;
+    border-radius: 4px;
 }
 
 .indicator p {
@@ -21,25 +22,12 @@
 }
 
 .on {
-    display: flex !important;
+    display: flex;
 }
 
 .off {
     display: none;
 }
- 
-@keyframes appear {
-    to {
-        display: flex !important;
-    }
-}
-
-@keyframes disappear {
-    to {
-        display: none;
-    }
-}
-
 
 button {
     border-radius: 3px;
