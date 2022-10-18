@@ -1,7 +1,6 @@
 const button = document.getElementById('delay');
 const endereco = document.getElementById('link');
 const redireciona = document.getElementById('url').innerHTML;
-const captcha = document.getElementById('recaptcha');
 const section = document.getElementById('cont-link');
 const indicator = document.getElementById('cont');
 const elementLoad = document.getElementById('load');
@@ -18,7 +17,7 @@ const loading = new IntersectionObserver( entries => {
     }, {
     threshold: [0.25 , 0.5 , 0.75 , 1]
     })
-    Array.from(captcha).forEach( element => {
+    Array.from(document.getElementById('recaptcha')).forEach( element => {
     dashup.observe(element)
 })
 
