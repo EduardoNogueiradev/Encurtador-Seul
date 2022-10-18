@@ -10,7 +10,7 @@ const loading = new IntersectionObserver( entries => {
 
     Array.from(entries).forEach(entry => {
         if (entry.intersectionRatio >= 1) {
-            
+            load.classList.toggle('off')
         }
     })
 
