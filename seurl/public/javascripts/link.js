@@ -4,22 +4,12 @@ const redireciona = document.getElementById('url').innerHTML;
 const section = document.getElementById('cont-link');
 const indicator = document.getElementById('cont');
 const elementLoad = document.getElementById('load');
+const captcha = document.getElementById('recaptcha');
 
-const loading = new IntersectionObserver( entries => {
-
-    Array.from(entries).forEach(entry => {
-        if (entry.intersectionRatio >= 1) {
-            console.log("entrou")
-            elementLoad.classList.toggle('off')
-        }
-    })
-
-    }, {
-    threshold: [0.25 , 0.5 , 0.75 , 1]
-    })
-    Array.from(document.getElementById('recaptcha')).forEach( element => {
-    dashup.observe(element)
-})
+function loadingComplete() {
+    captcha.classList.toggle('on');
+    elementLoad.classList.toggle('off');
+}
 
 function recaptchaVerify() {
     button.classList.toggle('on');
