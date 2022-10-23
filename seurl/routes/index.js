@@ -52,8 +52,14 @@ router.get('/:code/stats', async (req, res, next) =>{
   res.render('stats', resultado.dataValues);
 })
 
-router.get('/testedaminhaaplicacao', (req, res, next) =>{
-
+router.get('/testedaminhaaplicacao/:code', async (req, res, next) =>{
+  const code = req.params.code;
+  
+  const resultado = await Link.findOne({where: {code} });
+  if(!resultado) return res.sendStatus(404);
+  
+  resultado.hits++; 
+  await resultado.save();
 
   res.render('teste', resultado.dataValues);
 })
