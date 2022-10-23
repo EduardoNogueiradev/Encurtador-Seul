@@ -52,7 +52,7 @@ router.get('/:code/stats', async (req, res, next) =>{
   res.render('stats', resultado.dataValues);
 })
 
-router.get('/testedaminhaaplicacao/', function(req, res, next) {
+router.get('/testedaminhaaplicacao', function(req, res, next) {
 
   res.render('teste');
 })
