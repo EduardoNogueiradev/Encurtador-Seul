@@ -3,7 +3,6 @@ var router = express.Router();
 const Link = require('../models/link');
 
 /* gerador de codigos */
-
 function generateCode(){
   let text = '';
   const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -52,6 +51,12 @@ router.get('/:code/stats', async (req, res, next) =>{
   if(!resultado) return res.sendStatus(404);
   res.render('stats', resultado.dataValues);
 })
-module.exports = router;
 
+router.get('/testedaminhaaplicacao', (req, res, next) =>{
+
+
+  res.render('teste', resultado.dataValues);
+})
+
+module.exports = router;
 
